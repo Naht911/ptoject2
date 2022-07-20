@@ -1,0 +1,13 @@
+.customlogo {
+    /* position: absolute; */
+    /* width: 461px; */
+    /* height: 60px; */
+    left: 40px !important;
+    top: 28px !important;
+    font-family: 'Haan YGodic 250' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 25px !important;
+    /* line-height: 63px; */
+    color: #5987CD !important;
+  }
