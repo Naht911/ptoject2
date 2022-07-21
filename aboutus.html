@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  </head>
+  <body style="height: 1500px">
+    <nav
+      class="navbar navbar-expand-lg rounded navbar-light bg-light fixed-top"
+    >
+      <a class="navbar-brand customlogo" href="/">Z T CLINIC </a>
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navb"
+      >
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html#">
+            <i class="fa-solid fa-house"> </i> HOME
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html#therapists">
+            <i class="fa-solid fa-user-doctor"> </i> THERAPISTS
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html#">
+            <i class="fa-solid fa-images"> </i> GALLERY
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >PRODUCTS
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!-- <h5 class="dropdown-item">Products Type 1</h5>
+            <a class="dropdown-item" href="#">Products 1 </a>
+            <a class="dropdown-item" href="#">Products 2 </a>
+            <hr />
+            <h5 class="dropdown-item">Products Type 2</h5>
+            <a class="dropdown-item" href="#">Products 1 </a>
+            <a class="dropdown-item" href="#">Products 2 </a>
+            <hr> -->
+            <h5 class="dropdown-item">All Products</h5>
+            <a class="dropdown-item" href="/produccts/index.html">See All</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >SERVICES
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!-- <h5 class="dropdown-item">Services Type 1</h5>
+            <a class="dropdown-item" href="#">Services 1 </a>
+            <a class="dropdown-item" href="#">Services 2 </a>
+            <hr />
+            <h5 class="dropdown-item">Services Type 2</h5>
+            <a class="dropdown-item" href="#">Services 1 </a>
+            <a class="dropdown-item" href="#">Services 2 </a>
+            <hr> -->
+            <h5 class="dropdown-item">All Services</h5>
+            <a class="dropdown-item" href="/services/index.html">See All</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-danger" href="/index.html#contact">Contact US</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container py-5">
+        <br />
+        <!-- For demo purpose -->
+        <div class="row text-center text-black mb-5 top-auto bottom-auto">
+          <div class="col-lg-7 mx-auto">
+            <h1 class="display-4">Our Story</h1>
+            <p class="small">Who We Are</p>
+            <p class="lead">
+              Our therapist, Zara, holds a diploma in Remedial massage therapy.
+              Referring to Zara's background, she used to be a medical doctor
+              for 20 years back in Iran and graduated from Azad University,
+              Tehran Medical Branch. She is currently providing services such as
+              remedial massage, Hijama therapy, Dry needling, cupping, and
+              Guasha therapy in Thompsons Medical Centre located at 306
+              Thompsons Road Templestowe Lower and 195 Specialist Centre in
+              Bulleen. She is working on the recovery process of muscle-related
+              pains.
+            </p>
+          </div>
+        </div>
+        <!-- End -->
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <!-- List group-->
+            <iframe src="https://player.vimeo.com/video/75629156?h=9932103a2b" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <p><a href="https://vimeo.com/75629156">Zara Clinic // Acupuncture &amp; Massage in Vancouver, WA</a> from <a href="https://vimeo.com/hileannemiller">Leanne Miller</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+            <!-- End -->
+          </div>
+        </div>
+        <br />
+        
+      </div>
+    </main>
+    <footer class="relative bg-blueGray-200 pt-8 pb-6">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+        style="transform: translateZ(0)"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+          class="absolute bottom-0 overflow-hidden"
+        >
+          <polygon
+            points="2560 0 2560 100 0 100"
+            class="text-blueGray-200 fill-current"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap text-center lg:text-left">
+          <div class="w-full lg:w-4/12 px-4">
+            <h4 class="text-3xl font-semibold">Let's keep in touch!!!</h4>
+            <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+              Find us on any of these platforms, we respond 1-2 business days.
+            </h5>
+            <div class="mt-6 lg:mb-0 mb-6">
+              <button
+                type="button"
+                class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              >
+                <i class="fab fa-twitter"></i>
+              </button>
+              <button
+                type="button"
+                class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              >
+                <i class="fab fa-facebook-square"></i>
+              </button>
+              <button
+                type="button"
+                class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              >
+                <i class="fab fa-dribbble"></i>
+              </button>
+            </div>
+          </div>
+          <div class="w-full lg:w-8/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span
+                  class="block uppercase text-blueGray-500 text-sm font-semibold mb-2"
+                >
+                  Useful Links
+                </span>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="/aboutus.html"
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    >
+                      About Us
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/index.html#therapists"
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    >
+                      Therapists
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/products/index.html"
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    >
+                      Products
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/services/index.html"
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    >
+                      Services
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-8/12 px-8 ml-auto">
+                <span
+                  class="block uppercase text-blueGray-500 text-sm font-semibold mb-2"
+                >
+                  Where You Can Find Us?
+                </span>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="/aboutus.html"
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    >
+                      590 . Cach Mang Thang 8, Ward 11, District 3, Ho Chi Minh
+                      City 723564, Vietnam
+                    </a>
+                  </li>
+                  <li>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3192813592655!2d106.66408561531618!3d10.786840061949803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2zRlBUIEFwdGVjaCBIQ00gLSBI4buHIFRo4buRbmcgxJDDoG8gVOG6oW8gTOG6rXAgVHLDrG5oIFZpw6puIFF14buRYyBU4bq_IChTaW5jZSAxOTk5KQ!5e0!3m2!1svi!2s!4v1656371586563!5m2!1svi!2s"
+                      width="400"
+                      height="300"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      style="border: 0"
+                    >
+                    </iframe>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-blueGray-300" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-blueGray-500 font-semibold py-1">
+              Copyright © 2022 Zara Therapy Clinic by T1.2203.M1 - G5 <br />
+              Special Thanks to
+              <a
+                href="https://www.creative-tim.com?ref=na-footer"
+                class="text-blueGray-500 hover:text-blueGray-800"
+              >
+                Creative Tim
+              </a>
+              .
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
