@@ -618,6 +618,7 @@
                     <input
                       type="text"
                       placeholder="Full Name"
+                      id="full-name"
                       class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     />
                   </div>
@@ -631,6 +632,7 @@
                     <input
                       type="email"
                       placeholder="Email"
+                      id="email"
                       class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     />
                   </div>
@@ -644,6 +646,8 @@
                     <textarea
                       rows="4"
                       cols="80"
+                      placeholder="Message"
+                      id="message"
                       placeholder="Type a message..."
                       class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                     >
@@ -667,6 +671,20 @@
       </section>
       <script>
         function send() {
+          var fullName = document.getElementById("full-name").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+          if(!fullName || !email || !message) {
+            alert("Please fill out all fields");
+            Toast.fire({
+            icon: "error",
+            title:
+              "Please fill out all fields",
+          });
+            return;
+          }
+
+          
           Toast.fire({
             icon: "success",
             title:
