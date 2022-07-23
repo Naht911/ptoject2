@@ -674,7 +674,7 @@
           var fullName = document.getElementById("full-name").value;
           var email = document.getElementById("email").value;
           var message = document.getElementById("message").value;
-          if(!fullName || !email || !message) {
+          if(!fullName && !email && !message) {
             // alert("Please fill out all fields");
             Toast.fire({
             icon: "error",
