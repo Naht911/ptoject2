@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Z T CLINIC</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://naht911.github.io/ptoject2/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://naht911.github.io/ptoject2/css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  </head>
+  <body style="height: 1500px">
+    <nav
+      class="navbar navbar-expand-lg rounded navbar-light bg-light fixed-top"
+    >
+      <a class="navbar-brand customlogo" href="https://naht911.github.io/ptoject2/">Z T CLINIC </a>
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navb"
+      >
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://naht911.github.io/ptoject2/index.html#">
+            <i class="fa-solid fa-house"> </i> HOME
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://naht911.github.io/ptoject2/index.html#therapists">
+            <i class="fa-solid fa-user-doctor"> </i> THERAPISTS
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://naht911.github.io/ptoject2/index.html#">
+            <i class="fa-solid fa-images"> </i> GALLERY
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >PRODUCTS
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!-- <h5 class="dropdown-item">Products Type 1</h5>
+            <a class="dropdown-item" href="#">Products 1 </a>
+            <a class="dropdown-item" href="#">Products 2 </a>
+            <hr />
+            <h5 class="dropdown-item">Products Type 2</h5>
+            <a class="dropdown-item" href="#">Products 1 </a>
+            <a class="dropdown-item" href="#">Products 2 </a>
+            <hr> -->
+            <h5 class="dropdown-item">All Products</h5>
+            <a class="dropdown-item" href="https://naht911.github.io/ptoject2/products/index.html">See All</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >SERVICES
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!-- <h5 class="dropdown-item">Services Type 1</h5>
+            <a class="dropdown-item" href="#">Services 1 </a>
+            <a class="dropdown-item" href="#">Services 2 </a>
+            <hr />
+            <h5 class="dropdown-item">Services Type 2</h5>
+            <a class="dropdown-item" href="#">Services 1 </a>
+            <a class="dropdown-item" href="#">Services 2 </a>
+            <hr> -->
+            <h5 class="dropdown-item">All Services</h5>
+            <a class="dropdown-item" href="https://naht911.github.io/ptoject2/services/index.html">See All</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-danger" href="https://naht911.github.io/ptoject2/index.html#contact">Contact US</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div
+        class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75"
+      >
+        <div
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          style="
+            background-image: url('https://static.onecms.io/wp-content/uploads/sites/23/2018/08/22/find-therapist-1.jpg');
+          "
+        >
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-75 bg-black"
+          >
+          </span>
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class="pr-12">
+                <h1 class="text-white font-semibold text-5xl">Who we are?</h1>
+                <p class="mt-4 text-lg text-blueGray-200">
+                  At Zara Therapy Clinic, we help a person relieve stress,
+                  increase relaxation, improve circulation and gain relief from
+                  pain by manipulating the muscle and tissues in the body. They
+                  help rehabilitate injuries through touch and aid in the
+                  general wellness of a patient.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
+          style="transform: translateZ(0)"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+            class="absolute bottom-0 overflow-hidden"
+          >
+            <polygon
+              points="2560 0 2560 100 0 100"
+              class="text-blueGray-200 fill-current"
+            ></polygon>
+          </svg>
+        </div>
+      </div>
+      <section class="pb-20 bg-blueGray-200 -mt-24">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
+                  >
+                    <i class="fab fa-symfony"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Natural Pain Relief</h6>
+                  <p class="mt-2 mb-4 text-blueGray-500">
+                    Offering elite services to help you recover from injuries,
+                    naturally relieve chronic pain, and feel your best faster
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12 px-4 text-center">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400"
+                  >
+                    <i class="fab fa-symfony"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Whole Health Wellness</h6>
+                  <p class="mt-2 mb-4 text-blueGray-500">
+                    Connecting patients with the tools to create healthy
+                    mind-body-soul balance
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400"
+                  >
+                    <i class="fab fa-symfony"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Holistic Pampering</h6>
+                  <p class="mt-2 mb-4 text-blueGray-500">
+                    Relaxation and relief of stress is a huge part of our
+                    wellness that is important. We make self-care easy and
+                    enjoyable, allowing you to look and feel your best from the
+                    inside out
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center mt-32">
+            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+              <div
+                class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
+              >
+                <i class="fas fa-user-friends text-xl"></i>
+              </div>
+              <h3 class="text-3xl mb-2 font-semibold leading-normal">
+                Types of Lasers
+              </h3>
+              <p
+                class="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600"
+              >
+                The CANDELA Gentle MAX PRO Laser for large body areas and for
+                all types of hair.
+              </p>
+              <p
+                class="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600"
+              >
+                The ELOS Syneron EMAX platform with combined Diode and RF
+                Technology for all types of hair and skin
+              </p>
+              <a
+                class="font-bold text-blueGray-700 mt-8"
+                ng-reflect-router-link="/"
+                href="https://naht911.github.io/ptoject2/"
+              >
+                Read more &gt;
+              </a>
+            </div>
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-red-600"
+              >
+                <img
+                  alt="..."
+                  src="https://www.lasercaremed.com/Uploads/pro/15539185045c9ee9f54a90e.jpg"
+                  class="w-full align-middle rounded-t-lg"
+                />
+                <blockquote class="relative p-8 mb-4">
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block h-95-px -top-94-px"
+                  >
+                    <polygon
+                      points="-30,95 583,95 583,65"
+                      class="text-red-600 fill-current"
+                    ></polygon>
+                  </svg>
+                  <h4 class="text-xl font-bold text-black">
+                    The CANDELA Gentle MAX PRO Laser
+                  </h4>
+                  <p class="text-md font-light mt-2 text-black">
+                    for large body areas and for all types of hair.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative py-20">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+          style="transform: translateZ(0)"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+            class="absolute bottom-0 overflow-hidden"
+          >
+            <polygon
+              points="2560 0 2560 100 0 100"
+              class="text-white fill-current"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+              <img
+                alt="..."
+                src="https://americanceliac.org/wp-content/uploads/2019/11/Lower-lip-swollen-and-numbness.jpg"
+                class="max-w-full rounded-lg shadow-lg"
+              />
+            </div>
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+              <div class="md:pr-12">
+                <div
+                  class="text-red-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-red-300"
+                >
+                  <i class="fas fa-rocket text-xl"></i>
+                </div>
+                <h3 class="text-3xl font-semibold">Upper lip</h3>
+                <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
+                  Upper lip/underarm/bikini/lower leg hair are not hormonally
+                  dependent, therefore laser reduction in these areas have
+                  exemplary results..
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-20 pb-48" id="therapists">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-center text-center mb-24">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold">Here are our therapists</h2>
+              <p class="text-lg leading-relaxed m-4 text-blueGray-500">
+                We have the best therapists in the area ready to serve you even
+                outside of business hours at no extra cost.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div class="px-6">
+                <img
+                  alt="..."
+                  src="https://i.imgur.com/AsJIoFI.png"
+                  class="shadow-lg rounded-full mx-auto max-w-120-px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Jessica Tatieze</h5>
+                  <p
+                    class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
+                  >
+                    EAST ASIAN MEDICINE <br />
+                    PRACTITIONER (EAMP) ACUPUNCTURIST
+                  </p>
+                  <div class="mt-6">
+                    <button
+                      type="button"
+                      class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    >
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    >
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    >
+                      <i class="fab fa-dribbble"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div class="px-6">
+                <img
+                  alt="..."
+                  src="https://th.bing.com/th/id/OIP.Xy4IQXGgPSr45MX6HgDaMwHaJ4?pid=ImgDet&rs=1"
+                  class="shadow-lg rounded-full mx-auto max-w-120-px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Marcy Franklin</h5>
+                  <p
+                    class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
+                  >
+                    Holistic Skincare Esthetician <br />
+                    Practitioner Assistant
+                  </p>
+                  <div class="mt-6">
+                    <button
+                      type="button"
+                      class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    >
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    >
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    >
+                      <i class="fab fa-dribbble"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div class="px-6">
+                <img
+                  alt="..."
+                  src="https://i1.wp.com/motivationscounseling.com/wp-content/uploads/2020/07/Olivia-Pudlo-LCSW-TF-CBT-Certified-EMDR-Therapist-1-e1593731765564.jpg?fit=270%2C405&ssl=1"
+                  class="shadow-lg rounded-full mx-auto max-w-120-px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Tami Farr</h5>
+                  <p
+                    class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
+                  >
+                    License Massage Practitioner <br />
+                    Zara Therapy CEO
+                  </p>
+                  <div class="mt-6">
+                    <button
+                      type="button"
+                      class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    >
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    >
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    >
+                      <i class="fab fa-dribbble"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div class="px-6">
+                <img
+                  alt="..."
+                  src="https://th.bing.com/th/id/OIP.uoi3l0R_UiaomAzrua4ybgHaJR?pid=ImgDet&rs=1"
+                  class="shadow-lg rounded-full mx-auto max-w-120-px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Arwyn Borzone</h5>
+                  <p
+                    class="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
+                  >
+                    EAST ASIAN MEDICINE <br />
+                    Billing Coordinator <br />
+                    PRACTITIONER (EAMP)
+                  </p>
+                  <div class="mt-6">
+                    <button
+                      type="button"
+                      class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    >
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    >
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    >
+                      <i class="fab fa-dribbble"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pb-20 relative block bg-blueGray-800">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+          style="transform: translateZ(0)"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+            class="absolute bottom-0 overflow-hidden"
+          >
+            <polygon
+              points="2560 0 2560 100 0 100"
+              class="text-blueGray-800 fill-current"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+          <div class="flex flex-wrap text-center justify-center">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold text-white">Review</h2>
+              <p class="text-lg leading-relaxed mt-4 mb-4 text-blueGray-400">
+                See what our customers say about us
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap mt-12 justify-center">
+            <div class="w-full lg:w-3/12 px-4 text-center">
+              <div
+                class="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
+              >
+                <img
+                  alt="..."
+                  src="https://www.icmetl.org/wp-content/uploads/2020/11/user-icon-human-person-sign-vector-10206693.png"
+                  class="shadow-lg rounded-full mx-auto max-w-120-px"
+                />
+              </div>
+              <h6 class="text-xl mt-5 font-semibold text-white">Jasmine</h6>
+              <p class="mt-2 mb-4 text-blueGray-400">
+                I’ve been feeling better, thanks to the Zara Therapy Clinic
+                <br />
+                I was debating whether I should go the walk-in clinic to fix my
+                issues and left it too late. I always regret not making an
+                appointment when I show up there — and well, so do they. 😂😂
+                <br />
+                I finally went to the Zara Therapy Clinic because they were open
+                on Sundays, and it turned out to be an opportunity
+              </p>
+            </div>
+            <div class="w-full lg:w-3/12 px-4 text-center">
+              <div
+                class="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
+              >
+                <img
+                  alt="..."
+                  src="https://www.icmetl.org/wp-content/uploads/2020/11/user-icon-human-person-sign-vector-10206693.png"
+                  class="shadow-lg rounded-full mx-auto max-w-120-px"
+                />
+              </div>
+              <h5 class="text-xl mt-5 font-semibold text-white">Gary Cooper</h5>
+              <p class="mt-2 mb-4 text-blueGray-400">
+                The best thing I can say is that I had a good experience.
+                <br />
+                I feel as if I've been helped by the treatment I received.
+                <br />
+                I felt better after the service at the Zara Therapy Clinic.
+              </p>
+            </div>
+            <div class="w-full lg:w-3/12 px-4 text-center">
+              <div
+                class="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
+              >
+                <img
+                  alt="..."
+                  src="https://www.icmetl.org/wp-content/uploads/2020/11/user-icon-human-person-sign-vector-10206693.png"
+                  class="shadow-lg rounded-full mx-auto max-w-120-px"
+                />
+              </div>
+              <h5 class="text-xl mt-5 font-semibold text-white">Karen</h5>
+              <p class="mt-2 mb-4 text-blueGray-400">
+                I had a great experience at the Zara Therapy Clinic. I was able
+                to get an appointment quickly and the staff was very friendly. I
+                felt better after my service.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative block py-24 lg:pt-0 bg-blueGray-800" id="contact">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+            <div class="w-full lg:w-6/12 px-4">
+              <div
+                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200"
+              >
+              <form action="#" return false>
+                <div class="flex-auto p-5 lg:p-10">
+                  <h4 class="text-2xl font-semibold">Contact with us</h4>
+                  <p class="leading-relaxed mt-1 mb-4 text-blueGray-500">
+                    Complete this form and we will get back to you in 24 hours.
+                  </p>
+                  <div class="relative w-full mb-3 mt-8">
+                    <label
+                      htmlfor="full-name"
+                      class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                    >
+                      Full Name
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Full Name"
+                      id="full-name"
+                      class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                    />
+                  </div>
+                  <div class="relative w-full mb-3">
+                    <label
+                      htmlfor="email"
+                      class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                    >
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      id="email"
+                      class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                    />
+                  </div>
+                  <div class="relative w-full mb-3">
+                    <label
+                      htmlfor="message"
+                      class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                    >
+                      Message
+                    </label>
+                    <textarea
+                      rows="4"
+                      cols="80"
+                      id="message"
+                      placeholder="Type a message..."
+                      class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                    ></textarea>
+                  </div>
+                  <div class="text-center mt-6">
+                    <button
+                      onclick="send()"
+                      type="button"
+                      class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        function send() {
+          var fullName = document.getElementById("full-name").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+          if(!fullName || !email || !message) {
+            // alert("Please fill out all fields");
+            Toast.fire({
+            icon: "error",
+            title:
+              "Please fill out all fields",
+          });
+            return;
+          }          
+          Toast.fire({
+            icon: "success",
+            title:
+              "Thank you for submitting the form, we will contact you as soon as possible",
+          });
+        }
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "top-end",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener("mouseenter", Swal.stopTimer);
+            toast.addEventListener("mouseleave", Swal.resumeTimer);
+          },
+        });
+      </script>
+    </main>
+    <footer class="relative bg-blueGray-200 pt-8 pb-6">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+        style="transform: translateZ(0)"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+          class="absolute bottom-0 overflow-hidden"
+        >
+          <polygon
+            points="2560 0 2560 100 0 100"
+            class="text-blueGray-200 fill-current"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap text-center lg:text-left">
+          <div class="w-full lg:w-4/12 px-4">
+            <h4 class="text-3xl font-semibold">Let's keep in touch!!!</h4>
+            <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+              Find us on any of these platforms, we respond 1-2 business days.
+            </h5>
+            <div class="mt-6 lg:mb-0 mb-6">
+              <button
+                type="button"
+                class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              >
+                
+                <i class="fab fa-twitter"></i>
+              </button>
+              <button
+                type="button"
+                class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              >
+                
+                <i class="fab fa-facebook-square"></i>
+              </button>
+              <button
+                type="button"
+                class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              >
+                
+                <i class="fab fa-dribbble"></i> 
+              </button>
+             
+            </div>
+          </div>
+          <div class="w-full lg:w-8/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span
+                  class="block uppercase text-blueGray-500 text-sm font-semibold mb-2"
+                >
+                  Useful Links
+                </span>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="https://naht911.github.io/ptoject2/aboutus.html"
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    >
+                      About Us
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://naht911.github.io/ptoject2/index.html#therapists"
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    >
+                      Therapists
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://naht911.github.io/ptoject2/products/index.html"
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    >
+                      Products
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://naht911.github.io/ptoject2/services/index.html"
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    >
+                      Services
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-8/12 px-8 ml-auto">
+                <span
+                  class="block uppercase text-blueGray-500 text-sm font-semibold mb-2"
+                >
+                  Where You Can Find Us?
+                </span>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="https://naht911.github.io/ptoject2/aboutus.html"
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    >
+                      590 . Cach Mang Thang 8, Ward 11, District 3, Ho Chi Minh
+                      City 723564, Vietnam
+                    </a>
+                  </li>
+                  <li>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3192813592655!2d106.66408561531618!3d10.786840061949803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2zRlBUIEFwdGVjaCBIQ00gLSBI4buHIFRo4buRbmcgxJDDoG8gVOG6oW8gTOG6rXAgVHLDrG5oIFZpw6puIFF14buRYyBU4bq_IChTaW5jZSAxOTk5KQ!5e0!3m2!1svi!2s!4v1656371586563!5m2!1svi!2s"
+                      width="400"
+                      height="300"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      style="border: 0"
+                    >
+                    </iframe>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-blueGray-300" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-blueGray-500 font-semibold py-1">
+              Copyright © 2022 Zara Therapy Clinic by T1.2203.M1 - G5 <br />
+              Special Thanks to
+              <a
+                href="https://www.creative-tim.com?ref=na-footer"
+                class="text-blueGray-500 hover:text-blueGray-800"
+              >
+                Creative Tim
+              </a>
+              .
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
