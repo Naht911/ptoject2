@@ -29,33 +29,35 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   </head>
-  <body style="height: 1500px">
+  <body >
     <nav
       class="navbar navbar-expand-lg rounded navbar-light bg-light fixed-top"
     >
-      <a class="navbar-brand customlogo" href="">Z T CLINIC </a>
+      <a class="navbar-brand customlogo" href="/">Z T CLINIC </a>
       <button
         class="navbar-toggler navbar-toggler-right"
         type="button"
         data-toggle="collapse"
-        data-target="#navb"
+        data-target="#collapsibleNavbar"
       >
         <span class="navbar-toggler-icon"> </span>
       </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.html#">
+          <a class="nav-link" href="/index.html#">
             <i class="fa-solid fa-house"> </i> HOME
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html#therapists">
+          <a class="nav-link" href="/index.html#therapists">
             <i class="fa-solid fa-user-doctor"> </i> THERAPISTS
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="index.html#">
+          <a class="nav-link" href="/gallery.html">
             <i class="fa-solid fa-images"> </i> GALLERY
           </a>
         </li>
@@ -73,16 +75,9 @@
             >PRODUCTS
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <!-- <h5 class="dropdown-item">Products Type 1</h5>
-            <a class="dropdown-item" href="#">Products 1 </a>
-            <a class="dropdown-item" href="#">Products 2 </a>
-            <hr />
-            <h5 class="dropdown-item">Products Type 2</h5>
-            <a class="dropdown-item" href="#">Products 1 </a>
-            <a class="dropdown-item" href="#">Products 2 </a>
-            <hr> -->
-            <h5 class="dropdown-item">All Products</h5>
-            <a class="dropdown-item" href="products/index.html">See All</a>
+            
+            
+            <a class="dropdown-item" href="/products/index.html">All Products</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -97,22 +92,16 @@
             >SERVICES
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <!-- <h5 class="dropdown-item">Services Type 1</h5>
-            <a class="dropdown-item" href="#">Services 1 </a>
-            <a class="dropdown-item" href="#">Services 2 </a>
-            <hr />
-            <h5 class="dropdown-item">Services Type 2</h5>
-            <a class="dropdown-item" href="#">Services 1 </a>
-            <a class="dropdown-item" href="#">Services 2 </a>
-            <hr> -->
-            <h5 class="dropdown-item">All Services</h5>
-            <a class="dropdown-item" href="services/index.html">See All</a>
+            
+            
+            <a class="dropdown-item" href="/services/index.html">All Services</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="btn btn-danger" href="index.html#contact">Contact US</a>
+          <a class="btn btn-danger" href="/index.html#contact">Contact Us</a>
         </li>
       </ul>
+      </div>
     </nav>
     <main>
       <div
@@ -121,7 +110,7 @@
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
           style="
-            background-image: url('https://static.onecms.io/wp-content/uploads/sites/23/2018/08/22/find-therapist-1.jpg');
+            background-image: url('/img/yxGIo0E.png');
           "
         >
           <span
@@ -248,13 +237,7 @@
                 The ELOS Syneron EMAX platform with combined Diode and RF
                 Technology for all types of hair and skin
               </p>
-              <a
-                class="font-bold text-blueGray-700 mt-8"
-                ng-reflect-router-link="/"
-                href=""
-              >
-                Read more &gt;
-              </a>
+              
             </div>
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
               <div
@@ -262,7 +245,7 @@
               >
                 <img
                   alt="..."
-                  src="https://www.lasercaremed.com/Uploads/pro/15539185045c9ee9f54a90e.jpg"
+                  src="/img/SQT6jhL.png"
                   class="w-full align-middle rounded-t-lg"
                 />
                 <blockquote class="relative p-8 mb-4">
@@ -314,7 +297,7 @@
             <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
               <img
                 alt="..."
-                src="https://americanceliac.org/wp-content/uploads/2019/11/Lower-lip-swollen-and-numbness.jpg"
+                src="/img/mILE8In.png"
                 class="max-w-full rounded-lg shadow-lg"
               />
             </div>
@@ -352,7 +335,7 @@
               <div class="px-6">
                 <img
                   alt="..."
-                  src="http://zaravancouver.com/images/jessicatatieze-head-shot.jpg"
+                  src="/img/AsJIoFI.png"
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
@@ -390,7 +373,7 @@
               <div class="px-6">
                 <img
                   alt="..."
-                  src="https://th.bing.com/th/id/OIP.Xy4IQXGgPSr45MX6HgDaMwHaJ4?pid=ImgDet&rs=1"
+                  src="/img/TGngETi.png"
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
@@ -428,7 +411,7 @@
               <div class="px-6">
                 <img
                   alt="..."
-                  src="https://i1.wp.com/motivationscounseling.com/wp-content/uploads/2020/07/Olivia-Pudlo-LCSW-TF-CBT-Certified-EMDR-Therapist-1-e1593731765564.jpg?fit=270%2C405&ssl=1"
+                  src="/img/cmuNvIG.png"
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
@@ -466,7 +449,7 @@
               <div class="px-6">
                 <img
                   alt="..."
-                  src="https://th.bing.com/th/id/OIP.uoi3l0R_UiaomAzrua4ybgHaJR?pid=ImgDet&rs=1"
+                  src="/img/mIV0RmG.png"
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
@@ -540,7 +523,7 @@
               >
                 <img
                   alt="..."
-                  src="https://www.icmetl.org/wp-content/uploads/2020/11/user-icon-human-person-sign-vector-10206693.png"
+                  src="/img/wnoXAjf.png"
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
               </div>
@@ -562,7 +545,7 @@
               >
                 <img
                   alt="..."
-                  src="https://www.icmetl.org/wp-content/uploads/2020/11/user-icon-human-person-sign-vector-10206693.png"
+                  src="/img/wnoXAjf.png"
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
               </div>
@@ -581,7 +564,7 @@
               >
                 <img
                   alt="..."
-                  src="https://www.icmetl.org/wp-content/uploads/2020/11/user-icon-human-person-sign-vector-10206693.png"
+                  src="/img/wnoXAjf.png"
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
               </div>
@@ -618,6 +601,7 @@
                     <input
                       type="text"
                       placeholder="Full Name"
+                      id="full-name"
                       class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     />
                   </div>
@@ -631,6 +615,7 @@
                     <input
                       type="email"
                       placeholder="Email"
+                      id="email"
                       class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     />
                   </div>
@@ -644,10 +629,10 @@
                     <textarea
                       rows="4"
                       cols="80"
+                      id="message"
                       placeholder="Type a message..."
                       class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                    >
-                    </textarea>
+                    ></textarea>
                   </div>
                   <div class="text-center mt-6">
                     <button
@@ -667,6 +652,18 @@
       </section>
       <script>
         function send() {
+          var fullName = document.getElementById("full-name").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+          if(!fullName || !email || !message) {
+            // alert("Please fill out all fields");
+            Toast.fire({
+            icon: "error",
+            title:
+              "Please fill out all fields",
+          });
+            return;
+          }          
           Toast.fire({
             icon: "success",
             title:
@@ -749,7 +746,7 @@
                 <ul class="list-unstyled">
                   <li>
                     <a
-                      href="aboutus.html"
+                      href="/aboutus.html"
                       class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                     >
                       About Us
@@ -757,7 +754,7 @@
                   </li>
                   <li>
                     <a
-                      href="index.html#therapists"
+                      href="/index.html#therapists"
                       class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                     >
                       Therapists
@@ -765,7 +762,7 @@
                   </li>
                   <li>
                     <a
-                      href="products/index.html"
+                      href="/products/index.html"
                       class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                     >
                       Products
@@ -773,7 +770,7 @@
                   </li>
                   <li>
                     <a
-                      href="services/index.html"
+                      href="/services/index.html"
                       class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                     >
                       Services
@@ -790,7 +787,7 @@
                 <ul class="list-unstyled">
                   <li>
                     <a
-                      href="aboutus.html"
+                      href="/aboutus.html"
                       class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                     >
                       590 . Cach Mang Thang 8, Ward 11, District 3, Ho Chi Minh
